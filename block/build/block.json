@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "hello-lyrics/hello-lyrics-block",
+  "version": "0.1.0",
+  "title": "Hello Lyrics Block",
+  "category": "widgets",
+  "icon": "format-audio",
+  "description": "Hello Lyrics block to display random quotes from the lines you have added at Settings > General > Hello Lyrics Section",
+  "supports": {
+    "align": true,
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "width": true,
+      "style": true
+    },
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "textdomain": "hello-lyrics-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
